@@ -1,8 +1,11 @@
 {
   "expo": {
-    "name": "mobile",
-    "slug": "mobile",
+    "name": "@proffy/mobile",
+    "slug": "@proffy/mobile",
     "version": "1.0.0",
+    "packagerOpts": {
+      "config": "metro.config.js"
+    },
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {

@@ -1,4 +1,5 @@
 {
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "jsx": "react-native",
@@ -7,6 +8,10 @@
     "noEmit": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
-    "strict": true
-  }
+    "strict": true,
+    "typeRoots": ["../../node_modules/@types", "./node_modules/@types", "./src/@types"]
+  },
+  "include": [
+    "src/**/*"
+  ]
 }

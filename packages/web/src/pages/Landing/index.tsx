@@ -16,7 +16,9 @@ function Landing() {
   const [totalConnections, setTotalConnections] = useState(0)
 
   const fetchTotalConnections = async () => {
-    const { data: { total } } = await api.get('connections')
+    const {
+      data: { total }
+    } = await api.get('connections')
 
     setTotalConnections(total)
   }
@@ -29,7 +31,7 @@ function Landing() {
     <div id="page-landing">
       <div id="page-landing-content" className="container">
         <div className="logo-container">
-          <img src={logoImg} alt="Proffy Logo"/>
+          <img src={logoImg} alt="Proffy Logo" />
           <h2>Sua plataforma de estudos online</h2>
         </div>
 
@@ -41,24 +43,23 @@ function Landing() {
 
         <div className="buttons-container">
           <Link to="/study" className="study">
-            <img src={studyIcon} alt="Estudar"/>
+            <img src={studyIcon} alt="Estudar" />
             Estudar
           </Link>
 
           <Link to="/give-classes" className="give-classes">
-            <img src={giveClassesIcon} alt="Dar Aulas"/>
+            <img src={giveClassesIcon} alt="Dar Aulas" />
             Dar aulas
           </Link>
         </div>
-        
+
         <span className="total-connections">
           Total de {totalConnections} conexões já realizadas
-          <img src={purpleHeartIcon} alt="Coração Roxo"/>
+          <img src={purpleHeartIcon} alt="Coração Roxo" />
         </span>
       </div>
     </div>
   )
 }
 
-export default
- Landing
+export default Landing
